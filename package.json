@@ -4,7 +4,7 @@
   "description": "Webhook test Webhook test Webhook test Webhook test Webhook test Webhook test",
   "main": "index.js",
   "scripts": {
-    "build": "echo 'Build ejecutado correctamente'",
+    "build": "mkdir -p dist && echo 'Build ejecutado correctamente' > dist/output.txt",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
