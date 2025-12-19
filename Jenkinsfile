@@ -6,14 +6,19 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build') {
+        stage('Install') {
             steps {
-                echo 'Compilando...'
+                sh 'npm install'
             }
         }
-        stage('Test') {
+        stage('Build') {
             steps {
-                echo 'Ejecutando tests...'
+                sh 'npm run build'
+            }
+        }
+        stage('Archive') {
+            steps {
+                archiveArtifacts artifacts: 'dist/**', fingerprint: true
             }
         }
     }
