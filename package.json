@@ -4,6 +4,7 @@
   "description": "Webhook test Webhook test Webhook test Webhook test Webhook test Webhook test",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'Build ejecutado correctamente'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
